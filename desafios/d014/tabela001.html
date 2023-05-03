@@ -24,20 +24,26 @@
             border: 1px solid black;
             padding: 10px;
         }
+
+        .media {
+            background-color: gray;
+            color: white;
+            text-align: left;
+        }
         
     </style>
 </head>
 <body>
     <table>
         <thead>
-            <th rowspan="2">Área</th>
-            <th rowspan="2">Disciplinas</th>
-            <th colspan="2">Notas</th>
-            <th rowspan="2">Média</th>
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="colgroup">Média</th>
 
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
 
@@ -71,8 +77,8 @@
                 <td>0.0</td>
             </tr>
 
-            <tr>
-                <th colspan="4">Média de Exatas</th>
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Exatas</th>
                 <td>0.0</td>
             </tr>
 
@@ -91,8 +97,8 @@
                 <td>0.0</td>
             </tr>
 
-            <tr>
-                <th colspan="4">Média de Humanas</th>
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Humanas</th>
                 <td>0.0</td>
             </tr>
         </tbody>
